@@ -20,3 +20,7 @@ body {
 .navbar-brand:hover {
     color: #fff;
 }
+
+.navbar-toggler {
+    background-color: #fce6e2de;
+}
