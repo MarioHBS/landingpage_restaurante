@@ -24,3 +24,15 @@ body {
 .navbar-toggler {
     background-color: #fce6e2de;
 }
+
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+.section-title span {
+    color: #e15f41;
+}
+
+#sobre-o-restaurante {
+    background-color: #ffeae6;
+}
