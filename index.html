@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-3">
+    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-3">
         <div class="container">
             <h1 class="navbar-brand m-0 section-title">Nome do Restaurante</h1>
 
@@ -26,7 +26,7 @@
             <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
                 <ul class="nav nav-pills d-block d-md-flex mt-2 mt-md-0"><!-- a partir de MD menu é flex -->
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link active">
+                        <a href="#sobre-o-restaurante" class="nav-link">
                             <i class="bi bi-house-door me-1"></i><!-- margin end -->
                             Sobre o Restaurante
                         </a>
@@ -54,59 +54,61 @@
         </div>
     </header>
 
-    <section id="sobre-o-restaurante">
-        <div id="carousel-topo" data-bs-ride="carousel" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="images/slides/slide1.png" alt="Espaço interno">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/slides/slide2.png" alt="Taças de vinho">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/slides/slide3.png" alt="Mesa com comida">
-                </div>
-            </div>
-
-            <button data-bs-target="#carousel-topo" data-bs-slide="prev" class="carousel-control-prev" type="button">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button data-bs-target="#carousel-topo" data-bs-slide="next" class="carousel-control-next" type="button">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="carousel-topo"  data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="carousel-topo"  data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="carousel-topo"  data-bs-slide-to="2"></button>
-            </div>
-        </div>
-
-        <div class="pt-5 pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="Espaço interno do restaurante">
+    <div  data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="sobre-o-restaurante">
+            <div id="carousel-topo" data-bs-ride="carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/slides/slide1.png" alt="Espaço interno">
                     </div>
-                    <div class="col-md-7">
-                        <h2 class="section-title">Sobre <span>o restaurante</span></h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam eum exercitationem ad eveniet laboriosam nam a. Similique voluptatum dolorem sunt consequatur! Nisi unde assumenda ullam, accusamus soluta dolorum aperiam optio.
-                        </p>
-                        <h3 class="section-title">Sobre <span>o espaço</span></h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, praesentium blanditiis natus numquam perferendis impedit nostrum laboriosam facilis quidem recusandae optio eius ab possimus temporibus vero commodi aspernatur vitae quas?
-                        </p>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide2.png" alt="Taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide3.png" alt="Mesa com comida">
                     </div>
                 </div>
+    
+                <button data-bs-target="#carousel-topo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-topo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+    
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="carousel-topo"  data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="carousel-topo"  data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="carousel-topo"  data-bs-slide-to="2"></button>
+                </div>
             </div>
-        </div>
-    </section>
+    
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="Espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title">Sobre <span>o restaurante</span></h2>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam eum exercitationem ad eveniet laboriosam nam a. Similique voluptatum dolorem sunt consequatur! Nisi unde assumenda ullam, accusamus soluta dolorum aperiam optio.
+                            </p>
+                            <h3 class="section-title">Sobre <span>o espaço</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, praesentium blanditiis natus numquam perferendis impedit nostrum laboriosam facilis quidem recusandae optio eius ab possimus temporibus vero commodi aspernatur vitae quas?
+                            </p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
