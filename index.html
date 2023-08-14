@@ -157,16 +157,16 @@
                 <div class="row">
                     <aside class="col-md-2">
                         <nav class="nav nav-pills flex-column nav-cardapio">
-                            <button type="button" class="fw-bold text-start nav-link text-colored active">Bebidas não alcoólicas</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored">Entradas</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored">Pratos principais</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#nao-alcoolicas" class="fw-bold text-start nav-link text-colored active">Bebidas não alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#alcoolicas" class="fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Pratos principais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
                         </nav>
                     </aside>
                     <div class="col-md-10">
                         <div class="tab-content">
-                            <div class="tab-pane active"><!-- aba Não alcoólicas -->
+                            <div id="nao-alcoolicas" class="tab-pane active"><!-- aba Não alcoólicas -->
                                 <div class="row">
                                     <div class="col-md-3">
                                         <img src="images/cardapio/bebidas/coca-cola.jpg" class="d-block w-100" alt="regrigerante coca-cola e copos">
@@ -211,6 +211,28 @@
                                         </p>
                                     </div>
                                 </div>
+                            </div>
+                            <!-- .tab-pane>.row>col-md-3>img.d-block+h5.text-colored+p -->
+                            <div id="alcoolicas" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="images/cardapio/bebidas/cerveja.jpg" alt="cerveja" class="d-block w-100">
+                                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                        <p>
+                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/cardapio/bebidas/vinho.jpg" alt="vinho" class="d-block w-100">
+                                        <h5 class="text-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane">
+
                             </div>
                         </div>
                     </div>
